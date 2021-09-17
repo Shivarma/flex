@@ -1,0 +1,142 @@
+<style>
+    .box-1 {
+      border: 1px solid black;
+      color: white;
+      background-color: blue;
+      height: 150px;
+      width: 300px;
+    }
+    .box-2 {
+      border: 1px solid black;
+      color: white;
+      background-color: red;
+      height: 100px;
+      width: 300px;
+    }
+    .box-3 {
+      border: 1px solid black;
+      color: white;
+      background-color: green;
+      height: 200px;
+      width: 100px;
+    }
+  </style>
+  <div class="box-1">1</div>
+  <div class="box-2">2</div>
+  <div class="box-3">3</div>
+
+  <p>flex display</p>
+  <style>
+    .flex-container {
+      display: flex;
+      width: 100%;
+      border: 1px solid black;
+    }
+  </style>
+  <div class="flex-container">
+    <div class="box-1">1</div>
+    <div class="box-2">2</div>
+    <div class="box-3">3</div>
+  </div>
+
+  <p>direction = reverse</p>
+  <style>
+    .reverse {
+      flex-direction: row-reverse;
+    }
+  </style>
+  <div class="flex-container reverse">
+    <div class="box-1">1</div>
+    <div class="box-2">2</div>
+    <div class="box-3">3</div>
+  </div>
+
+  <p>column</p>
+  <style>
+    .column {
+      flex-direction: column;
+    }
+  </style>
+  <div class="flex-container column">
+    <div class="box-1">1</div>
+    <div class="box-2">2</div>
+    <div class="box-3">3</div>
+  </div>
+
+  <p>justify right</p>
+  <style>
+    .jc-right {
+      justify-content: flex-end;
+    }
+  </style>
+  <div class="flex-container jc-right">
+    <div class="box-1">1</div>
+    <div class="box-2">2</div>
+    <div class="box-3">3</div>
+  </div>
+
+  <p>center</p>
+  <style>
+    .jc-center {
+      justify-content: center;
+    }
+  </style>
+  <div class="flex-container jc-center">
+    <div class="box-1">1</div>
+    <div class="box-2">2</div>
+    <div class="box-3">3</div>
+  </div>
+
+  <p>space between</p>
+  <style>
+    .jc-sb {
+      justify-content: space-between;
+    }
+  </style>
+  <div class="flex-container jc-sb">
+    <div class="box-1">1</div>
+    <div class="box-2">2</div>
+    <div class="box-3">3</div>
+  </div>
+
+  <p>align item flex end</p>
+  <style>
+    .ai-fe {
+      align-items: flex-end;
+    }
+  </style>
+  <div class="flex-container ai-fe">
+    <div class="box-1">1</div>
+    <div class="box-2">2</div>
+    <div class="box-3">3</div>
+  </div>
+
+  <p>align center</p>
+  <style>
+    .ai-center {
+      align-items: center;
+    }
+  </style>
+  <div class="flex-container ai-center">
+    <div class="box-1">1</div>
+    <div class="box-2">2</div>
+    <div class="box-3">3</div>
+  </div>
+
+  <p>align strech</p>
+  <style>
+    .ai-stretch {
+      align-items: stretch;
+      height: 200px;
+    }
+  
+    /* remove the height from the three boxes */
+    .no-height {
+      height: inherit;
+    }
+  </style>
+  <div class="flex-container ai-stretch">
+    <div class="box-1 no-height">1</div>
+    <div class="box-2 no-height">2</div>
+    <div class="box-3 no-height">3</div>
+  </div>
